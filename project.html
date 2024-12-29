@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd62067a9f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="images/mylogo.jpg" class="logo">
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p> Hi,I'm a Web Designer</p>
+                <h1>My name is  <span>Shahab</span> <br> and I am from lahore</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcol1">
+                    <img  src="images/user.jpg" >
+                </div>
+                    <div class="aboutcol2">
+                 <h1 class="subtitle">About Me</h1>
+                 <p style="text-align: justify;font-style: italic;font-size: 17px;">I am professionally a web designer but one of my side hobbies are taking pictures of nature.I love taking pictures of sunsets and sunrises .I love making timelapses and also making pictures of animals.In actual i am very busy in making websites and all the tech work but whenever I am free i spend all of my time taking beautiful pictures</p>                                
+                
+                    <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p></div>
+
+<div class="tab-contents  active-tab" id="skills">
+    <ul>
+        <li><span>Web Designer</span><br>Designing Web Interfaces</li>
+        <li><span>App Developer</span><br>Building android\ios apps</li>
+        <li><span>Photographer</span><br>Taking nature photography</li>
+    </ul>
+</div><div class="tab-contents" id="experience">
+    <ul>
+        <li><span>2020-Current</span><br>Working as a senior webdeveloper at IAT tech</li>
+        <li><span>2019-2020</span><br>Worked as a app developer at a company for a year</li>
+        <li><span>2018</span><br>Did a short course of photography for my hobbie</li>
+    </ul>
+</div><div class="tab-contents" id="education">
+    <ul>
+        <li><span>2018</span><br>Started my Data science degree from PUCIT</li>
+        <li><span>2022</span><br>Did my MBA from MIT in Data science</li>
+        <li><span>2024</span><br>Still taking some photography classes from a institute</li>
+    </ul>
+</div>
+</div>                 
+</div>
+</div>
+</div>
+<br><br>
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>I offer services in making websites for different organizations.I am very skillful and can make attractive websites so that these websites can help an organization in their cause or business expansion.</p>
+                <a href="#">LEARN MORE</a>
+            </div>
+            <div>
+                <h2>App Developing</h2>
+                <p>I've learned so much skills about app development and I can develop many game apps.I can write codes in different languages and make games.We offer all the services about game development reach us and u will never regret about that</p>
+            
+                <a href="#">LEARN MORE</a>
+            </div>
+            <div>
+                <h2>Photographer</h2>
+                <p>If anyone is interested in Photographer reach me because i am very good at editing photos and videos.One of my pictures which i took is on the about webpage</p>
+                <a href="#">LEARN MORE</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br><br><br>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">PORTFOLIO</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" >
+            </div> <div class="work">
+                <img  src="images/work-2.png" >
+            </div> <div class="work">
+                <img src="images/online.jpg" >
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="conatiner">
+        <div class="row">
+            <div class="contactleft">
+                <h1 class="subtitle" style="margin-left: 450px;color: lightcoral;">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>  SyedShahabAli@gmail.com</p><br>
+                <p><i class="fa-sharp fa-solid fa-phone-volume"></i>  03175660345</p>
+                <div class="socialicons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <p>SyedShahabAli</p><br>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <p>SyedShahab_21</p><br>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <p>Syedshahab_sa</p><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    } 
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+    
+</body>
+</html>
